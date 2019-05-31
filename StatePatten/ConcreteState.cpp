@@ -4,11 +4,17 @@
 
 #include <iostream>
 #include "ConcreteState.h"
-
-void ConcreteState::handle() {
+#include "Context.h"
+#include "ConcreteStateA.h"
+void ConcreteState::handle(Context *context) {
     std::cout<<"ConcreteState::handle()"<<std::endl;
+    changeState(context,new ConcreteStateA);
 }
 
-ConcreteState::ConcreteState() = default;
+ConcreteState::ConcreteState() {
+
+}
+
+
 
 ConcreteState::~ConcreteState() = default;

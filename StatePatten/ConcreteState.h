@@ -7,7 +7,7 @@
 
 
 #include "State.h"
-
+class Context;
 class ConcreteState : public State{
 public:
     ConcreteState();
@@ -15,7 +15,9 @@ public:
      ~ConcreteState()override ;
 
 public:
-    void handle() override;
+    void handle(Context *context) override;
+
+
 };
 
 
