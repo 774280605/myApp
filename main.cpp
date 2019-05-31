@@ -1,5 +1,5 @@
 #include <iostream>
-#include <winsock2.h>
+//#include <winsock2.h>
 
 
 int main() {

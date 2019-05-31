@@ -12,10 +12,10 @@ class ConcreteState : public State{
 public:
     ConcreteState();
 
-    virtual ~ConcreteState();
+     ~ConcreteState()override ;
 
 public:
-    virtual void handle() override;
+    void handle() override;
 };
 
 

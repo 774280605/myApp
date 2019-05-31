@@ -9,9 +9,6 @@ void ConcreteState::handle() {
     std::cout<<"ConcreteState::handle()"<<std::endl;
 }
 
-ConcreteState::ConcreteState() {
-}
+ConcreteState::ConcreteState() = default;
 
-ConcreteState::~ConcreteState() {
-
-}
+ConcreteState::~ConcreteState() = default;
